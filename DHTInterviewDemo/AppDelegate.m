@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "ViewController.h"
 #import "DHTGCDViewController.h"
+#import "DHTCoreDataViewController.h"
 
 @interface AppDelegate ()
 
@@ -22,7 +23,7 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
-    self.window.rootViewController = [[DHTGCDViewController alloc] init];
+    self.window.rootViewController = [[DHTCoreDataViewController alloc] init];
     
     [self.window makeKeyAndVisible];
     return YES;

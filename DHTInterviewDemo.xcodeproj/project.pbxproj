@@ -18,6 +18,10 @@
 		2113A3E91C4A3F5200EA0096 /* DHTGCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2113A3E81C4A3F5200EA0096 /* DHTGCDViewController.m */; };
 		2113A3ED1C4B39CF00EA0096 /* DHTCustomOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2113A3EC1C4B39CF00EA0096 /* DHTCustomOperation.m */; };
 		2113A3F01C4B41A300EA0096 /* DHTAsynchronouslyOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2113A3EF1C4B41A300EA0096 /* DHTAsynchronouslyOperation.m */; };
+		21EA45561C4C96FE00657D81 /* DHTCoreDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21EA45551C4C96FE00657D81 /* DHTCoreDataViewController.m */; };
+		21EA45591C4C974000657D81 /* DHTInterviewDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 21EA45571C4C974000657D81 /* DHTInterviewDemo.xcdatamodeld */; };
+		21EA455E1C4C9DC800657D81 /* Person+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 21EA455B1C4C9DC800657D81 /* Person+CoreDataProperties.m */; };
+		21EA455F1C4C9DC800657D81 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 21EA455D1C4C9DC800657D81 /* Person.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +64,13 @@
 		2113A3EC1C4B39CF00EA0096 /* DHTCustomOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHTCustomOperation.m; sourceTree = "<group>"; };
 		2113A3EE1C4B41A300EA0096 /* DHTAsynchronouslyOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHTAsynchronouslyOperation.h; sourceTree = "<group>"; };
 		2113A3EF1C4B41A300EA0096 /* DHTAsynchronouslyOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHTAsynchronouslyOperation.m; sourceTree = "<group>"; };
+		21EA45541C4C96FE00657D81 /* DHTCoreDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHTCoreDataViewController.h; sourceTree = "<group>"; };
+		21EA45551C4C96FE00657D81 /* DHTCoreDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHTCoreDataViewController.m; sourceTree = "<group>"; };
+		21EA45581C4C974000657D81 /* DHTInterviewDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DHTInterviewDemo.xcdatamodel; sourceTree = "<group>"; };
+		21EA455A1C4C9DC800657D81 /* Person+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Person+CoreDataProperties.h"; sourceTree = "<group>"; };
+		21EA455B1C4C9DC800657D81 /* Person+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Person+CoreDataProperties.m"; sourceTree = "<group>"; };
+		21EA455C1C4C9DC800657D81 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		21EA455D1C4C9DC800657D81 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +121,7 @@
 		2113A3B31C4916DD00EA0096 /* DHTInterviewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				21EA45531C4C8A9B00657D81 /* CoreData */,
 				2113A3EA1C4B399E00EA0096 /* Concurrent */,
 				2113A3B71C4916DD00EA0096 /* AppDelegate.h */,
 				2113A3B81C4916DD00EA0096 /* AppDelegate.m */,
@@ -128,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				2113A3B51C4916DD00EA0096 /* main.m */,
+				21EA45571C4C974000657D81 /* DHTInterviewDemo.xcdatamodeld */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -161,6 +174,19 @@
 				2113A3EF1C4B41A300EA0096 /* DHTAsynchronouslyOperation.m */,
 			);
 			name = Concurrent;
+			sourceTree = "<group>";
+		};
+		21EA45531C4C8A9B00657D81 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				21EA45541C4C96FE00657D81 /* DHTCoreDataViewController.h */,
+				21EA45551C4C96FE00657D81 /* DHTCoreDataViewController.m */,
+				21EA455A1C4C9DC800657D81 /* Person+CoreDataProperties.h */,
+				21EA455B1C4C9DC800657D81 /* Person+CoreDataProperties.m */,
+				21EA455C1C4C9DC800657D81 /* Person.h */,
+				21EA455D1C4C9DC800657D81 /* Person.m */,
+			);
+			name = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,10 +321,14 @@
 			files = (
 				2113A3ED1C4B39CF00EA0096 /* DHTCustomOperation.m in Sources */,
 				2113A3BC1C4916DD00EA0096 /* ViewController.m in Sources */,
+				21EA455F1C4C9DC800657D81 /* Person.m in Sources */,
+				21EA45561C4C96FE00657D81 /* DHTCoreDataViewController.m in Sources */,
 				2113A3B91C4916DD00EA0096 /* AppDelegate.m in Sources */,
 				2113A3E91C4A3F5200EA0096 /* DHTGCDViewController.m in Sources */,
 				2113A3B61C4916DD00EA0096 /* main.m in Sources */,
 				2113A3F01C4B41A300EA0096 /* DHTAsynchronouslyOperation.m in Sources */,
+				21EA455E1C4C9DC800657D81 /* Person+CoreDataProperties.m in Sources */,
+				21EA45591C4C974000657D81 /* DHTInterviewDemo.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -524,6 +554,7 @@
 				2113A3E01C4916DD00EA0096 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2113A3E11C4916DD00EA0096 /* Build configuration list for PBXNativeTarget "DHTInterviewDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +563,7 @@
 				2113A3E31C4916DD00EA0096 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2113A3E41C4916DD00EA0096 /* Build configuration list for PBXNativeTarget "DHTInterviewDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -540,8 +572,22 @@
 				2113A3E61C4916DD00EA0096 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		21EA45571C4C974000657D81 /* DHTInterviewDemo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				21EA45581C4C974000657D81 /* DHTInterviewDemo.xcdatamodel */,
+			);
+			currentVersion = 21EA45581C4C974000657D81 /* DHTInterviewDemo.xcdatamodel */;
+			path = DHTInterviewDemo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 2113A3A91C4916DD00EA0096 /* Project object */;
 }
