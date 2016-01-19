@@ -24,6 +24,7 @@
 		21EA45591C4C974000657D81 /* DHTInterviewDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 21EA45571C4C974000657D81 /* DHTInterviewDemo.xcdatamodeld */; };
 		21EA455E1C4C9DC800657D81 /* Person+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 21EA455B1C4C9DC800657D81 /* Person+CoreDataProperties.m */; };
 		21EA455F1C4C9DC800657D81 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 21EA455D1C4C9DC800657D81 /* Person.m */; };
+		21EAE95A1C4DDC7700B55B66 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 21EAE9591C4DDC7700B55B66 /* libsqlite3.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		21EA455B1C4C9DC800657D81 /* Person+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Person+CoreDataProperties.m"; sourceTree = "<group>"; };
 		21EA455C1C4C9DC800657D81 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		21EA455D1C4C9DC800657D81 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		21EAE9591C4DDC7700B55B66 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21EAE95A1C4DDC7700B55B66 /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +110,7 @@
 		2113A3A81C4916DD00EA0096 = {
 			isa = PBXGroup;
 			children = (
+				21EAE9591C4DDC7700B55B66 /* libsqlite3.tbd */,
 				2113A3B31C4916DD00EA0096 /* DHTInterviewDemo */,
 				2113A3CD1C4916DD00EA0096 /* DHTInterviewDemoTests */,
 				2113A3D81C4916DD00EA0096 /* DHTInterviewDemoUITests */,
