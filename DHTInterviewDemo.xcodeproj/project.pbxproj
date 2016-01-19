@@ -25,6 +25,8 @@
 		21EA455E1C4C9DC800657D81 /* Person+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 21EA455B1C4C9DC800657D81 /* Person+CoreDataProperties.m */; };
 		21EA455F1C4C9DC800657D81 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 21EA455D1C4C9DC800657D81 /* Person.m */; };
 		21EAE95A1C4DDC7700B55B66 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 21EAE9591C4DDC7700B55B66 /* libsqlite3.tbd */; };
+		21EAE95E1C4E348D00B55B66 /* DHTGraphicsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21EAE95D1C4E348D00B55B66 /* DHTGraphicsViewController.m */; };
+		21EAE9611C4E34B200B55B66 /* DHTGraphicsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 21EAE9601C4E34B200B55B66 /* DHTGraphicsView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +81,10 @@
 		21EA455C1C4C9DC800657D81 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		21EA455D1C4C9DC800657D81 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		21EAE9591C4DDC7700B55B66 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		21EAE95C1C4E348D00B55B66 /* DHTGraphicsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHTGraphicsViewController.h; sourceTree = "<group>"; };
+		21EAE95D1C4E348D00B55B66 /* DHTGraphicsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHTGraphicsViewController.m; sourceTree = "<group>"; };
+		21EAE95F1C4E34B200B55B66 /* DHTGraphicsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHTGraphicsView.h; sourceTree = "<group>"; };
+		21EAE9601C4E34B200B55B66 /* DHTGraphicsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHTGraphicsView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +137,7 @@
 		2113A3B31C4916DD00EA0096 /* DHTInterviewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				21EAE95B1C4E343900B55B66 /* GraphicsAndAnimation */,
 				2113A3F11C4D03B800EA0096 /* DataStorage */,
 				21EA45531C4C8A9B00657D81 /* CoreData */,
 				2113A3EA1C4B399E00EA0096 /* Concurrent */,
@@ -209,6 +216,17 @@
 				21EA455D1C4C9DC800657D81 /* Person.m */,
 			);
 			name = CoreData;
+			sourceTree = "<group>";
+		};
+		21EAE95B1C4E343900B55B66 /* GraphicsAndAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				21EAE95C1C4E348D00B55B66 /* DHTGraphicsViewController.h */,
+				21EAE95D1C4E348D00B55B66 /* DHTGraphicsViewController.m */,
+				21EAE95F1C4E34B200B55B66 /* DHTGraphicsView.h */,
+				21EAE9601C4E34B200B55B66 /* DHTGraphicsView.m */,
+			);
+			name = GraphicsAndAnimation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -349,6 +367,8 @@
 				2113A3E91C4A3F5200EA0096 /* DHTGCDViewController.m in Sources */,
 				2113A3F71C4D2D7800EA0096 /* Car.m in Sources */,
 				2113A3B61C4916DD00EA0096 /* main.m in Sources */,
+				21EAE9611C4E34B200B55B66 /* DHTGraphicsView.m in Sources */,
+				21EAE95E1C4E348D00B55B66 /* DHTGraphicsViewController.m in Sources */,
 				2113A3F01C4B41A300EA0096 /* DHTAsynchronouslyOperation.m in Sources */,
 				2113A3F41C4D058900EA0096 /* DHTStorageViewController.m in Sources */,
 				21EA455E1C4C9DC800657D81 /* Person+CoreDataProperties.m in Sources */,
