@@ -10,6 +10,7 @@
 #import "ViewController.h"
 #import "DHTGCDViewController.h"
 #import "DHTCoreDataViewController.h"
+#import "DHTStorageViewController.h"
 
 @interface AppDelegate ()
 
@@ -23,7 +24,7 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
-    self.window.rootViewController = [[DHTCoreDataViewController alloc] init];
+    self.window.rootViewController = [[DHTStorageViewController alloc] init];
     
     [self.window makeKeyAndVisible];
     return YES;

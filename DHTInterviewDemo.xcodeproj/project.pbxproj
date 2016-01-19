@@ -18,6 +18,8 @@
 		2113A3E91C4A3F5200EA0096 /* DHTGCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2113A3E81C4A3F5200EA0096 /* DHTGCDViewController.m */; };
 		2113A3ED1C4B39CF00EA0096 /* DHTCustomOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2113A3EC1C4B39CF00EA0096 /* DHTCustomOperation.m */; };
 		2113A3F01C4B41A300EA0096 /* DHTAsynchronouslyOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2113A3EF1C4B41A300EA0096 /* DHTAsynchronouslyOperation.m */; };
+		2113A3F41C4D058900EA0096 /* DHTStorageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2113A3F31C4D058900EA0096 /* DHTStorageViewController.m */; };
+		2113A3F71C4D2D7800EA0096 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 2113A3F61C4D2D7800EA0096 /* Car.m */; };
 		21EA45561C4C96FE00657D81 /* DHTCoreDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21EA45551C4C96FE00657D81 /* DHTCoreDataViewController.m */; };
 		21EA45591C4C974000657D81 /* DHTInterviewDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 21EA45571C4C974000657D81 /* DHTInterviewDemo.xcdatamodeld */; };
 		21EA455E1C4C9DC800657D81 /* Person+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 21EA455B1C4C9DC800657D81 /* Person+CoreDataProperties.m */; };
@@ -64,6 +66,10 @@
 		2113A3EC1C4B39CF00EA0096 /* DHTCustomOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHTCustomOperation.m; sourceTree = "<group>"; };
 		2113A3EE1C4B41A300EA0096 /* DHTAsynchronouslyOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHTAsynchronouslyOperation.h; sourceTree = "<group>"; };
 		2113A3EF1C4B41A300EA0096 /* DHTAsynchronouslyOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHTAsynchronouslyOperation.m; sourceTree = "<group>"; };
+		2113A3F21C4D058900EA0096 /* DHTStorageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHTStorageViewController.h; sourceTree = "<group>"; };
+		2113A3F31C4D058900EA0096 /* DHTStorageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHTStorageViewController.m; sourceTree = "<group>"; };
+		2113A3F51C4D2D7800EA0096 /* Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
+		2113A3F61C4D2D7800EA0096 /* Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
 		21EA45541C4C96FE00657D81 /* DHTCoreDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHTCoreDataViewController.h; sourceTree = "<group>"; };
 		21EA45551C4C96FE00657D81 /* DHTCoreDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHTCoreDataViewController.m; sourceTree = "<group>"; };
 		21EA45581C4C974000657D81 /* DHTInterviewDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DHTInterviewDemo.xcdatamodel; sourceTree = "<group>"; };
@@ -121,6 +127,7 @@
 		2113A3B31C4916DD00EA0096 /* DHTInterviewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				2113A3F11C4D03B800EA0096 /* DataStorage */,
 				21EA45531C4C8A9B00657D81 /* CoreData */,
 				2113A3EA1C4B399E00EA0096 /* Concurrent */,
 				2113A3B71C4916DD00EA0096 /* AppDelegate.h */,
@@ -174,6 +181,17 @@
 				2113A3EF1C4B41A300EA0096 /* DHTAsynchronouslyOperation.m */,
 			);
 			name = Concurrent;
+			sourceTree = "<group>";
+		};
+		2113A3F11C4D03B800EA0096 /* DataStorage */ = {
+			isa = PBXGroup;
+			children = (
+				2113A3F21C4D058900EA0096 /* DHTStorageViewController.h */,
+				2113A3F31C4D058900EA0096 /* DHTStorageViewController.m */,
+				2113A3F51C4D2D7800EA0096 /* Car.h */,
+				2113A3F61C4D2D7800EA0096 /* Car.m */,
+			);
+			name = DataStorage;
 			sourceTree = "<group>";
 		};
 		21EA45531C4C8A9B00657D81 /* CoreData */ = {
@@ -325,8 +343,10 @@
 				21EA45561C4C96FE00657D81 /* DHTCoreDataViewController.m in Sources */,
 				2113A3B91C4916DD00EA0096 /* AppDelegate.m in Sources */,
 				2113A3E91C4A3F5200EA0096 /* DHTGCDViewController.m in Sources */,
+				2113A3F71C4D2D7800EA0096 /* Car.m in Sources */,
 				2113A3B61C4916DD00EA0096 /* main.m in Sources */,
 				2113A3F01C4B41A300EA0096 /* DHTAsynchronouslyOperation.m in Sources */,
+				2113A3F41C4D058900EA0096 /* DHTStorageViewController.m in Sources */,
 				21EA455E1C4C9DC800657D81 /* Person+CoreDataProperties.m in Sources */,
 				21EA45591C4C974000657D81 /* DHTInterviewDemo.xcdatamodeld in Sources */,
 			);
