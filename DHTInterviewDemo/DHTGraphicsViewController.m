@@ -20,7 +20,7 @@
     // Do any additional setup after loading the view.
     
     self.view = [[DHTGraphicsView alloc] initWithFrame:self.view.bounds];
-    self.view.backgroundColor = [UIColor redColor];
+    self.view.backgroundColor = [UIColor whiteColor];
 }
 
 - (void)didReceiveMemoryWarning {
