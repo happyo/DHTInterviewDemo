@@ -12,6 +12,7 @@
 #import "DHTCoreDataViewController.h"
 #import "DHTStorageViewController.h"
 #import "DHTGraphicsViewController.h"
+#import "DHTAnimationViewController.h"
 
 @interface AppDelegate ()
 
@@ -25,7 +26,7 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
-    self.window.rootViewController = [[DHTGraphicsViewController alloc] init];
+    self.window.rootViewController = [[DHTAnimationViewController alloc] init];
     
     [self.window makeKeyAndVisible];
     return YES;
