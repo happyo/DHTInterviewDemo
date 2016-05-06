@@ -58,10 +58,106 @@
 //    [self contextState];
     
     // Drawing gradients
-    [self drawGradients];
+//    [self drawGradients];
+    
+    // Moving shapes drawn on graphic contexts
+//    [self moveShapes];
+    
+    // Scaling shapes drawn on graphic contexts
+//    [self scaleShapes];
+    
+    // Rotating shapes drawn on graphic contexts
+    [self rotateShapes];
 }
 
 #pragma mark -- Private Methods --
+
+- (void)rotateShapes
+{
+    CGContextRef currentContext = UIGraphicsGetCurrentContext();
+    
+    CGMutablePathRef path = CGPathCreateMutable();
+    
+    CGRect rectangleRect = CGRectMake(150, 150, 100, 100);
+    
+    // use CGAffineTransform
+    CGAffineTransform transform = CGAffineTransformMakeRotation((10.0f * M_PI) / 180.0f);
+
+    CGPathAddRect(path, &transform, rectangleRect);
+    
+    // use CGContextScaleCTM
+//    CGContextRotateCTM(currentContext, (10.0f * M_PI) / 180.0f);
+//    
+//    CGPathAddRect(path, NULL, rectangleRect);
+    
+    
+    CGContextAddPath(currentContext, path);
+    
+    [[UIColor yellowColor] set];
+    
+    CGContextDrawPath(currentContext, kCGPathFillStroke);
+    
+    CGPathRelease(path);
+}
+
+- (void)scaleShapes
+{
+    CGContextRef currentContext = UIGraphicsGetCurrentContext();
+    
+    CGMutablePathRef path = CGPathCreateMutable();
+    
+    CGRect rectangleRect = CGRectMake(50, 50, 100, 100);
+    
+    // use CGAffineTransform
+//    CGAffineTransform transform = CGAffineTransformMakeScale(2, 2);
+//    
+//    CGPathAddRect(path, &transform, rectangleRect);
+    
+    // use CGContextScaleCTM
+    CGContextScaleCTM(currentContext, 2, 2);
+    
+    CGPathAddRect(path, NULL, rectangleRect);
+    
+    
+    CGContextAddPath(currentContext, path);
+    
+    [[UIColor yellowColor] set];
+    
+    CGContextDrawPath(currentContext, kCGPathFillStroke);
+    
+    CGPathRelease(path);
+}
+
+
+- (void)moveShapes
+{
+    CGContextRef currentContext = UIGraphicsGetCurrentContext();
+    
+    CGMutablePathRef path = CGPathCreateMutable();
+    
+    CGRect rectangleRect = CGRectMake(50, 50, 100, 100);
+    
+    // use CGAffineTransform
+//    CGAffineTransform transform = CGAffineTransformMakeTranslation(100, 100);
+//    
+//    CGPathAddRect(path, &transform, rectangleRect);
+    
+    // use CGContextTranslateCTM
+    CGContextTranslateCTM(currentContext, 100, 100);
+    
+    CGPathAddRect(path, NULL, rectangleRect);
+    
+    
+    
+    CGContextAddPath(currentContext, path);
+    
+    [[UIColor yellowColor] set];
+    
+    CGContextDrawPath(currentContext, kCGPathFillStroke);
+    
+    CGPathRelease(path);
+    
+}
 
 - (void)drawImages
 {

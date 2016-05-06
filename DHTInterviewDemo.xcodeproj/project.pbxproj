@@ -27,6 +27,7 @@
 		21EAE95A1C4DDC7700B55B66 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 21EAE9591C4DDC7700B55B66 /* libsqlite3.tbd */; };
 		21EAE95E1C4E348D00B55B66 /* DHTGraphicsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21EAE95D1C4E348D00B55B66 /* DHTGraphicsViewController.m */; };
 		21EAE9611C4E34B200B55B66 /* DHTGraphicsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 21EAE9601C4E34B200B55B66 /* DHTGraphicsView.m */; };
+		21EAE9641C50885300B55B66 /* DHTAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21EAE9631C50885300B55B66 /* DHTAnimationViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,8 @@
 		21EAE95D1C4E348D00B55B66 /* DHTGraphicsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHTGraphicsViewController.m; sourceTree = "<group>"; };
 		21EAE95F1C4E34B200B55B66 /* DHTGraphicsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHTGraphicsView.h; sourceTree = "<group>"; };
 		21EAE9601C4E34B200B55B66 /* DHTGraphicsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHTGraphicsView.m; sourceTree = "<group>"; };
+		21EAE9621C50885300B55B66 /* DHTAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHTAnimationViewController.h; sourceTree = "<group>"; };
+		21EAE9631C50885300B55B66 /* DHTAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHTAnimationViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,6 +228,8 @@
 				21EAE95D1C4E348D00B55B66 /* DHTGraphicsViewController.m */,
 				21EAE95F1C4E34B200B55B66 /* DHTGraphicsView.h */,
 				21EAE9601C4E34B200B55B66 /* DHTGraphicsView.m */,
+				21EAE9621C50885300B55B66 /* DHTAnimationViewController.h */,
+				21EAE9631C50885300B55B66 /* DHTAnimationViewController.m */,
 			);
 			name = GraphicsAndAnimation;
 			sourceTree = "<group>";
@@ -362,6 +367,7 @@
 				2113A3ED1C4B39CF00EA0096 /* DHTCustomOperation.m in Sources */,
 				2113A3BC1C4916DD00EA0096 /* ViewController.m in Sources */,
 				21EA455F1C4C9DC800657D81 /* Person.m in Sources */,
+				21EAE9641C50885300B55B66 /* DHTAnimationViewController.m in Sources */,
 				21EA45561C4C96FE00657D81 /* DHTCoreDataViewController.m in Sources */,
 				2113A3B91C4916DD00EA0096 /* AppDelegate.m in Sources */,
 				2113A3E91C4A3F5200EA0096 /* DHTGCDViewController.m in Sources */,
