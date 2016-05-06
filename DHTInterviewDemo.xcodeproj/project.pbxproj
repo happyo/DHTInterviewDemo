@@ -20,6 +20,7 @@
 		2113A3F01C4B41A300EA0096 /* DHTAsynchronouslyOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2113A3EF1C4B41A300EA0096 /* DHTAsynchronouslyOperation.m */; };
 		2113A3F41C4D058900EA0096 /* DHTStorageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2113A3F31C4D058900EA0096 /* DHTStorageViewController.m */; };
 		2113A3F71C4D2D7800EA0096 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 2113A3F61C4D2D7800EA0096 /* Car.m */; };
+		219FC89B1CDC5A88002D547E /* DHTRuntimeTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 219FC89A1CDC5A88002D547E /* DHTRuntimeTestViewController.m */; };
 		21EA45561C4C96FE00657D81 /* DHTCoreDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21EA45551C4C96FE00657D81 /* DHTCoreDataViewController.m */; };
 		21EA45591C4C974000657D81 /* DHTInterviewDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 21EA45571C4C974000657D81 /* DHTInterviewDemo.xcdatamodeld */; };
 		21EA455E1C4C9DC800657D81 /* Person+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 21EA455B1C4C9DC800657D81 /* Person+CoreDataProperties.m */; };
@@ -74,6 +75,8 @@
 		2113A3F31C4D058900EA0096 /* DHTStorageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHTStorageViewController.m; sourceTree = "<group>"; };
 		2113A3F51C4D2D7800EA0096 /* Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
 		2113A3F61C4D2D7800EA0096 /* Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
+		219FC8991CDC5A88002D547E /* DHTRuntimeTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHTRuntimeTestViewController.h; sourceTree = "<group>"; };
+		219FC89A1CDC5A88002D547E /* DHTRuntimeTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHTRuntimeTestViewController.m; sourceTree = "<group>"; };
 		21EA45541C4C96FE00657D81 /* DHTCoreDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHTCoreDataViewController.h; sourceTree = "<group>"; };
 		21EA45551C4C96FE00657D81 /* DHTCoreDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHTCoreDataViewController.m; sourceTree = "<group>"; };
 		21EA45581C4C974000657D81 /* DHTInterviewDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DHTInterviewDemo.xcdatamodel; sourceTree = "<group>"; };
@@ -140,6 +143,7 @@
 		2113A3B31C4916DD00EA0096 /* DHTInterviewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				219FC8981CDC5A41002D547E /* Runtime */,
 				21EAE95B1C4E343900B55B66 /* GraphicsAndAnimation */,
 				2113A3F11C4D03B800EA0096 /* DataStorage */,
 				21EA45531C4C8A9B00657D81 /* CoreData */,
@@ -206,6 +210,15 @@
 				2113A3F61C4D2D7800EA0096 /* Car.m */,
 			);
 			name = DataStorage;
+			sourceTree = "<group>";
+		};
+		219FC8981CDC5A41002D547E /* Runtime */ = {
+			isa = PBXGroup;
+			children = (
+				219FC8991CDC5A88002D547E /* DHTRuntimeTestViewController.h */,
+				219FC89A1CDC5A88002D547E /* DHTRuntimeTestViewController.m */,
+			);
+			name = Runtime;
 			sourceTree = "<group>";
 		};
 		21EA45531C4C8A9B00657D81 /* CoreData */ = {
@@ -376,6 +389,7 @@
 				21EAE9611C4E34B200B55B66 /* DHTGraphicsView.m in Sources */,
 				21EAE95E1C4E348D00B55B66 /* DHTGraphicsViewController.m in Sources */,
 				2113A3F01C4B41A300EA0096 /* DHTAsynchronouslyOperation.m in Sources */,
+				219FC89B1CDC5A88002D547E /* DHTRuntimeTestViewController.m in Sources */,
 				2113A3F41C4D058900EA0096 /* DHTStorageViewController.m in Sources */,
 				21EA455E1C4C9DC800657D81 /* Person+CoreDataProperties.m in Sources */,
 				21EA45591C4C974000657D81 /* DHTInterviewDemo.xcdatamodeld in Sources */,
