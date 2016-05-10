@@ -14,6 +14,7 @@
 #import "DHTGraphicsViewController.h"
 #import "DHTAnimationViewController.h"
 #import "DHTRuntimeTestViewController.h"
+#import "DHTDataStructuresViewController.h"
 
 @interface AppDelegate ()
 
@@ -27,7 +28,7 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
-    self.window.rootViewController = [[DHTRuntimeTestViewController alloc] init];
+    self.window.rootViewController = [[DHTDataStructuresViewController alloc] init];
     
     [self.window makeKeyAndVisible];
     return YES;
