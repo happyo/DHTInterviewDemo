@@ -9,6 +9,7 @@
 #import "DHTRuntimeTestViewController.h"
 #import <objc/runtime.h>
 #import "MyClass.h"
+#import "DHTRuntimeMethodHelper.h"
 
 void TestMetaClass(id self, SEL _cmd) {
     
@@ -41,7 +42,75 @@ void TestMetaClass(id self, SEL _cmd) {
     
 //    [self logClassIsaInfo];
     
-    [self logClassInfo];
+//    [self logClassInfo];
+    
+    [self testMethodForwarding];
+}
+
+#pragma mark -- Class Methods --
+
+//+ (BOOL)resolveInstanceMethod:(SEL)sel
+//{
+//    NSString *selName = NSStringFromSelector(sel);
+//    
+//    if ([selName isEqualToString:@"methodNotFound"]) {
+//        class_addMethod(self, sel, (IMP)functionForMethodNotFound, "@:");
+//    }
+//    
+//    return [super resolveInstanceMethod:sel];
+//}
+
+
+
+#pragma mark -- Method Forwarding --
+
+- (NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector
+{
+    NSMethodSignature *signature = [super methodSignatureForSelector:aSelector];
+    
+    if (!signature) {
+        if ([DHTRuntimeMethodHelper instancesRespondToSelector:aSelector]) {
+            signature = [DHTRuntimeMethodHelper instanceMethodSignatureForSelector:aSelector];
+        }
+    }
+    
+    return signature;
+}
+
+- (void)forwardInvocation:(NSInvocation *)anInvocation
+{
+    if ([DHTRuntimeMethodHelper instancesRespondToSelector:anInvocation.selector]) {
+        [anInvocation invokeWithTarget:[[DHTRuntimeMethodHelper alloc] init]];
+    }
+}
+
+//- (id)forwardingTargetForSelector:(SEL)aSelector
+//{
+//    NSString *selName = NSStringFromSelector(aSelector);
+//    
+//    if ([selName isEqualToString:@"methodBackup"]) {
+//        return [[DHTRuntimeMethodHelper alloc] init];
+//    }
+//    
+//    return [super forwardingTargetForSelector:aSelector];
+//}
+#pragma mark -- Private Methods --
+
+void functionForMethodNotFound (id self, SEL _cmd)
+{
+    NSLog(@"%@, %p", self, _cmd);
+}
+
+- (void)testMethodForwarding
+{
+    // 动态方法解析
+//    [self performSelector:@selector(methodNotFound)];
+    
+    // 备用接受者
+//    [self performSelector:@selector(methodBackup)];
+    
+    // 完整消息转发
+    [self performSelector:@selector(methodBackup)];
 }
 
 - (void)logClassInfo

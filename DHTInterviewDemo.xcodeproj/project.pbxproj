@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		210410291CF2B23A00A6FC06 /* DHTRuntimeMethodHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 210410281CF2B23A00A6FC06 /* DHTRuntimeMethodHelper.m */; };
 		2113A3B61C4916DD00EA0096 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2113A3B51C4916DD00EA0096 /* main.m */; };
 		2113A3B91C4916DD00EA0096 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2113A3B81C4916DD00EA0096 /* AppDelegate.m */; };
 		2113A3BC1C4916DD00EA0096 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2113A3BB1C4916DD00EA0096 /* ViewController.m */; };
@@ -51,6 +52,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		210410271CF2B23A00A6FC06 /* DHTRuntimeMethodHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHTRuntimeMethodHelper.h; sourceTree = "<group>"; };
+		210410281CF2B23A00A6FC06 /* DHTRuntimeMethodHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHTRuntimeMethodHelper.m; sourceTree = "<group>"; };
 		2113A3B11C4916DD00EA0096 /* DHTInterviewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DHTInterviewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2113A3B51C4916DD00EA0096 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2113A3B71C4916DD00EA0096 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -235,6 +238,8 @@
 				219FC89A1CDC5A88002D547E /* DHTRuntimeTestViewController.m */,
 				21AACE0C1CDF82690040EA5A /* MyClass.h */,
 				21AACE0D1CDF82690040EA5A /* MyClass.m */,
+				210410271CF2B23A00A6FC06 /* DHTRuntimeMethodHelper.h */,
+				210410281CF2B23A00A6FC06 /* DHTRuntimeMethodHelper.m */,
 			);
 			name = Runtime;
 			sourceTree = "<group>";
@@ -406,6 +411,7 @@
 				2113A3F71C4D2D7800EA0096 /* Car.m in Sources */,
 				2113A3B61C4916DD00EA0096 /* main.m in Sources */,
 				21EAE9611C4E34B200B55B66 /* DHTGraphicsView.m in Sources */,
+				210410291CF2B23A00A6FC06 /* DHTRuntimeMethodHelper.m in Sources */,
 				21EAE95E1C4E348D00B55B66 /* DHTGraphicsViewController.m in Sources */,
 				2113A3F01C4B41A300EA0096 /* DHTAsynchronouslyOperation.m in Sources */,
 				219FC89B1CDC5A88002D547E /* DHTRuntimeTestViewController.m in Sources */,
