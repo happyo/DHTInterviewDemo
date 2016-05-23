@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		210410291CF2B23A00A6FC06 /* DHTRuntimeMethodHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 210410281CF2B23A00A6FC06 /* DHTRuntimeMethodHelper.m */; };
+		2104102C1CF2E3A100A6FC06 /* UIViewController+tracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 2104102B1CF2E3A100A6FC06 /* UIViewController+tracking.m */; };
 		2113A3B61C4916DD00EA0096 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2113A3B51C4916DD00EA0096 /* main.m */; };
 		2113A3B91C4916DD00EA0096 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2113A3B81C4916DD00EA0096 /* AppDelegate.m */; };
 		2113A3BC1C4916DD00EA0096 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2113A3BB1C4916DD00EA0096 /* ViewController.m */; };
@@ -54,6 +55,8 @@
 /* Begin PBXFileReference section */
 		210410271CF2B23A00A6FC06 /* DHTRuntimeMethodHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHTRuntimeMethodHelper.h; sourceTree = "<group>"; };
 		210410281CF2B23A00A6FC06 /* DHTRuntimeMethodHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHTRuntimeMethodHelper.m; sourceTree = "<group>"; };
+		2104102A1CF2E3A100A6FC06 /* UIViewController+tracking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+tracking.h"; sourceTree = "<group>"; };
+		2104102B1CF2E3A100A6FC06 /* UIViewController+tracking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+tracking.m"; sourceTree = "<group>"; };
 		2113A3B11C4916DD00EA0096 /* DHTInterviewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DHTInterviewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2113A3B51C4916DD00EA0096 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2113A3B71C4916DD00EA0096 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -240,6 +243,8 @@
 				21AACE0D1CDF82690040EA5A /* MyClass.m */,
 				210410271CF2B23A00A6FC06 /* DHTRuntimeMethodHelper.h */,
 				210410281CF2B23A00A6FC06 /* DHTRuntimeMethodHelper.m */,
+				2104102A1CF2E3A100A6FC06 /* UIViewController+tracking.h */,
+				2104102B1CF2E3A100A6FC06 /* UIViewController+tracking.m */,
 			);
 			name = Runtime;
 			sourceTree = "<group>";
@@ -409,6 +414,7 @@
 				2113A3B91C4916DD00EA0096 /* AppDelegate.m in Sources */,
 				2113A3E91C4A3F5200EA0096 /* DHTGCDViewController.m in Sources */,
 				2113A3F71C4D2D7800EA0096 /* Car.m in Sources */,
+				2104102C1CF2E3A100A6FC06 /* UIViewController+tracking.m in Sources */,
 				2113A3B61C4916DD00EA0096 /* main.m in Sources */,
 				21EAE9611C4E34B200B55B66 /* DHTGraphicsView.m in Sources */,
 				210410291CF2B23A00A6FC06 /* DHTRuntimeMethodHelper.m in Sources */,
