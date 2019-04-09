@@ -155,12 +155,12 @@
 		2113A3B31C4916DD00EA0096 /* DHTInterviewDemo */ = {
 			isa = PBXGroup;
 			children = (
-				21196A4D1CE200FD00387547 /* DataStructures */,
-				219FC8981CDC5A41002D547E /* Runtime */,
-				21EAE95B1C4E343900B55B66 /* GraphicsAndAnimation */,
-				2113A3F11C4D03B800EA0096 /* DataStorage */,
-				21EA45531C4C8A9B00657D81 /* CoreData */,
-				2113A3EA1C4B399E00EA0096 /* Concurrent */,
+				211C633B225C8E9D00704B79 /* Concurrent */,
+				211C633A225C8E8300704B79 /* CoreData */,
+				211C6338225C8E3A00704B79 /* DataStorage */,
+				211C6337225C8E2B00704B79 /* GraphicsAndAnimation */,
+				211C6336225C8E1700704B79 /* Runtime */,
+				211C6335225C8DF300704B79 /* DataStructure */,
 				2113A3B71C4916DD00EA0096 /* AppDelegate.h */,
 				2113A3B81C4916DD00EA0096 /* AppDelegate.m */,
 				2113A3BA1C4916DD00EA0096 /* ViewController.h */,
@@ -201,40 +201,16 @@
 			path = DHTInterviewDemoUITests;
 			sourceTree = "<group>";
 		};
-		2113A3EA1C4B399E00EA0096 /* Concurrent */ = {
-			isa = PBXGroup;
-			children = (
-				2113A3E71C4A3F5200EA0096 /* DHTGCDViewController.h */,
-				2113A3E81C4A3F5200EA0096 /* DHTGCDViewController.m */,
-				2113A3EB1C4B39CF00EA0096 /* DHTCustomOperation.h */,
-				2113A3EC1C4B39CF00EA0096 /* DHTCustomOperation.m */,
-				2113A3EE1C4B41A300EA0096 /* DHTAsynchronouslyOperation.h */,
-				2113A3EF1C4B41A300EA0096 /* DHTAsynchronouslyOperation.m */,
-			);
-			name = Concurrent;
-			sourceTree = "<group>";
-		};
-		2113A3F11C4D03B800EA0096 /* DataStorage */ = {
-			isa = PBXGroup;
-			children = (
-				2113A3F21C4D058900EA0096 /* DHTStorageViewController.h */,
-				2113A3F31C4D058900EA0096 /* DHTStorageViewController.m */,
-				2113A3F51C4D2D7800EA0096 /* Car.h */,
-				2113A3F61C4D2D7800EA0096 /* Car.m */,
-			);
-			name = DataStorage;
-			sourceTree = "<group>";
-		};
-		21196A4D1CE200FD00387547 /* DataStructures */ = {
+		211C6335225C8DF300704B79 /* DataStructure */ = {
 			isa = PBXGroup;
 			children = (
 				21196A4E1CE2012A00387547 /* DHTDataStructuresViewController.h */,
 				21196A4F1CE2012A00387547 /* DHTDataStructuresViewController.m */,
 			);
-			name = DataStructures;
+			path = DataStructure;
 			sourceTree = "<group>";
 		};
-		219FC8981CDC5A41002D547E /* Runtime */ = {
+		211C6336225C8E1700704B79 /* Runtime */ = {
 			isa = PBXGroup;
 			children = (
 				219FC8991CDC5A88002D547E /* DHTRuntimeTestViewController.h */,
@@ -246,23 +222,10 @@
 				2104102A1CF2E3A100A6FC06 /* UIViewController+tracking.h */,
 				2104102B1CF2E3A100A6FC06 /* UIViewController+tracking.m */,
 			);
-			name = Runtime;
+			path = Runtime;
 			sourceTree = "<group>";
 		};
-		21EA45531C4C8A9B00657D81 /* CoreData */ = {
-			isa = PBXGroup;
-			children = (
-				21EA45541C4C96FE00657D81 /* DHTCoreDataViewController.h */,
-				21EA45551C4C96FE00657D81 /* DHTCoreDataViewController.m */,
-				21EA455A1C4C9DC800657D81 /* Person+CoreDataProperties.h */,
-				21EA455B1C4C9DC800657D81 /* Person+CoreDataProperties.m */,
-				21EA455C1C4C9DC800657D81 /* Person.h */,
-				21EA455D1C4C9DC800657D81 /* Person.m */,
-			);
-			name = CoreData;
-			sourceTree = "<group>";
-		};
-		21EAE95B1C4E343900B55B66 /* GraphicsAndAnimation */ = {
+		211C6337225C8E2B00704B79 /* GraphicsAndAnimation */ = {
 			isa = PBXGroup;
 			children = (
 				21EAE95C1C4E348D00B55B66 /* DHTGraphicsViewController.h */,
@@ -272,7 +235,44 @@
 				21EAE9621C50885300B55B66 /* DHTAnimationViewController.h */,
 				21EAE9631C50885300B55B66 /* DHTAnimationViewController.m */,
 			);
-			name = GraphicsAndAnimation;
+			path = GraphicsAndAnimation;
+			sourceTree = "<group>";
+		};
+		211C6338225C8E3A00704B79 /* DataStorage */ = {
+			isa = PBXGroup;
+			children = (
+				2113A3F21C4D058900EA0096 /* DHTStorageViewController.h */,
+				2113A3F31C4D058900EA0096 /* DHTStorageViewController.m */,
+				2113A3F51C4D2D7800EA0096 /* Car.h */,
+				2113A3F61C4D2D7800EA0096 /* Car.m */,
+			);
+			path = DataStorage;
+			sourceTree = "<group>";
+		};
+		211C633A225C8E8300704B79 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				21EA45541C4C96FE00657D81 /* DHTCoreDataViewController.h */,
+				21EA45551C4C96FE00657D81 /* DHTCoreDataViewController.m */,
+				21EA455A1C4C9DC800657D81 /* Person+CoreDataProperties.h */,
+				21EA455B1C4C9DC800657D81 /* Person+CoreDataProperties.m */,
+				21EA455C1C4C9DC800657D81 /* Person.h */,
+				21EA455D1C4C9DC800657D81 /* Person.m */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		211C633B225C8E9D00704B79 /* Concurrent */ = {
+			isa = PBXGroup;
+			children = (
+				2113A3E71C4A3F5200EA0096 /* DHTGCDViewController.h */,
+				2113A3E81C4A3F5200EA0096 /* DHTGCDViewController.m */,
+				2113A3EB1C4B39CF00EA0096 /* DHTCustomOperation.h */,
+				2113A3EC1C4B39CF00EA0096 /* DHTCustomOperation.m */,
+				2113A3EE1C4B41A300EA0096 /* DHTAsynchronouslyOperation.h */,
+				2113A3EF1C4B41A300EA0096 /* DHTAsynchronouslyOperation.m */,
+			);
+			path = Concurrent;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
