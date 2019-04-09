@@ -7,14 +7,25 @@
 //
 
 #import "ViewController.h"
+#import "DHTRunLoopViewController.h"
 
-typedef struct{
-    char *title;
-    char *message;
-    char *cancelBtnTitle;
-} AlertViewData;
+@interface DHTVCModel : NSObject
 
-@interface ViewController () <UIWebViewDelegate>
+@property (nonatomic, strong) NSString *name;
+
+@property (nonatomic, strong) UIViewController *vc;
+
+@end
+
+@implementation DHTVCModel
+
+@end
+
+@interface ViewController () <UITableViewDelegate, UITableViewDataSource>
+
+@property (nonatomic, strong) UITableView *tableView;
+
+@property (nonatomic, strong) NSArray<DHTVCModel *> *vcList;
 
 @end
 
@@ -26,90 +37,61 @@ typedef struct{
     
     self.view.backgroundColor = [UIColor redColor];
     
-    __block int i = 0;
-    
-    void (^haha)(void) = ^() {
-        i = 1;
-    };
-    
-    void (^other)(void) = ^() {
-        i = 2;
-    };
-    
-    haha();
-    other();
-    
-    NSLog(@"%i", i);
-    
-    
-    
-//    UIWebView *webView = [[UIWebView alloc] initWithFrame:self.view.bounds];
-//    [self.view addSubview:webView];
-//    webView.backgroundColor = [UIColor blueColor];
-//    webView.scalesPageToFit = YES;
-//    webView.delegate = self;
-//    
-////    [webView loadHTMLString:@"<strong>hello world</strong>" baseURL:nil];
-//    
-//    NSURL *url = [NSURL URLWithString:@"http://www.baidu.com"];
-//    NSURLRequest *request = [NSURLRequest requestWithURL:url];
-//    
-//    [webView loadRequest:request];
-    
-    
-//    dispatch_queue_t mainQueue = dispatch_get_main_queue();
-//    dispatch_async(mainQueue, ^{
-//        NSLog(@"hello");
-//    });
-    
-//    AlertViewData *alertViewData = (AlertViewData *)malloc(sizeof(AlertViewData));
-//    alertViewData->title = "haha";
-//
-//    dispatch_async_f(dispatch_get_main_queue(), (void *)alertViewData, displayData);
-    
-//    dispatch_queue_t concurrentQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
-//
-//    void (^printHandle)() = ^(){
-//        for (int i = 1; i <= 100; i++) {
-//            NSLog(@"%i thread :%@", i, [NSThread currentThread]);
-//        }
-//    };
-//    dispatch_sync(concurrentQueue, printHandle);
-//    dispatch_sync(concurrentQueue, printHandle);
+    self.tableView.frame = self.view.bounds;
+    [self.view addSubview:self.tableView];
+}
+#pragma mark -- UITableViewDataSource --
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return self.vcList.count;
 }
 
-
-#pragma mark -- hha --
-//
-//- (void)webViewDidStartLoad:(UIWebView *)webView
-//{
-//    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
-//}
-//
-//- (void)webViewDidFinishLoad:(UIWebView *)webView
-//{
-//    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
-//}
-//
-//- (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error
-//{
-//    NSLog(@"%@", error);
-//}
-
-void displayData(void *paramContext){
-    AlertViewData *alertViewData = (AlertViewData *)paramContext;
-    NSLog(@"%@", [NSString stringWithUTF8String:alertViewData->title]);
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"UITableViewCell"];
     
-    free(alertViewData);
+    DHTVCModel *vcModel = self.vcList[indexPath.row];
+    
+    cell.textLabel.text = vcModel.name;
+    
+    return cell;
 }
 
-void printFrom1To100(void *paramContext){
+#pragma mark -- UITableViewDelegate --
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    DHTVCModel *vcModel = self.vcList[indexPath.row];
     
+    [self.navigationController pushViewController:vcModel.vc animated:YES];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark -- Getters && Setters --
+
+- (UITableView *)tableView
+{
+    if (!_tableView) {
+        _tableView = [[UITableView alloc] init];
+        _tableView.delegate = self;
+        _tableView.dataSource = self;
+        [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"UITableViewCell"];
+    }
+    
+    return _tableView;
+}
+
+- (NSArray<DHTVCModel *> *)vcList
+{
+    if (!_vcList) {
+        DHTVCModel *runLoopModel = [[DHTVCModel alloc] init];
+        runLoopModel.name = @"Run Loop";
+        runLoopModel.vc = [[DHTRunLoopViewController alloc] init];
+        
+        _vcList = @[runLoopModel];
+    }
+    
+    return _vcList;
 }
 
 @end
