@@ -26,6 +26,23 @@ typedef struct{
     
     self.view.backgroundColor = [UIColor redColor];
     
+    __block int i = 0;
+    
+    void (^haha)(void) = ^() {
+        i = 1;
+    };
+    
+    void (^other)(void) = ^() {
+        i = 2;
+    };
+    
+    haha();
+    other();
+    
+    NSLog(@"%i", i);
+    
+    
+    
 //    UIWebView *webView = [[UIWebView alloc] initWithFrame:self.view.bounds];
 //    [self.view addSubview:webView];
 //    webView.backgroundColor = [UIColor blueColor];
@@ -50,15 +67,15 @@ typedef struct{
 //
 //    dispatch_async_f(dispatch_get_main_queue(), (void *)alertViewData, displayData);
     
-    dispatch_queue_t concurrentQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
-    
-    void (^printHandle)() = ^(){
-        for (int i = 1; i <= 100; i++) {
-            NSLog(@"%i thread :%@", i, [NSThread currentThread]);
-        }
-    };
-    dispatch_sync(concurrentQueue, printHandle);
-    dispatch_sync(concurrentQueue, printHandle);
+//    dispatch_queue_t concurrentQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+//
+//    void (^printHandle)() = ^(){
+//        for (int i = 1; i <= 100; i++) {
+//            NSLog(@"%i thread :%@", i, [NSThread currentThread]);
+//        }
+//    };
+//    dispatch_sync(concurrentQueue, printHandle);
+//    dispatch_sync(concurrentQueue, printHandle);
 }
 
 

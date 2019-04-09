@@ -28,7 +28,7 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
-    self.window.rootViewController = [[DHTRuntimeTestViewController alloc] init];
+    self.window.rootViewController = [[ViewController alloc] init];
     
     [self.window makeKeyAndVisible];
     return YES;
