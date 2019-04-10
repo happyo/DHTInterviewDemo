@@ -7,6 +7,9 @@
 //
 
 #import "DHTRunLoopViewController.h"
+#import "RunLoopSource.h"
+#import "RunLoopContext.h"
+#import "AppDelegate.h"
 
 @interface DHTRunLoopViewController ()
 
@@ -55,6 +58,31 @@
 void myRunLoopObserver(CFRunLoopObserverRef observer, CFRunLoopActivity activity, void *info)
 {
     NSLog(@"ob");
+}
+
+// Running a run loop
+- (void)skeletonThreadMain
+{
+    // Set up an autorelease pool here if not using garbage collection.
+    BOOL done = NO;
+    
+    // Add your sources or timers to the run loop and do any other setup
+    
+    do
+    {
+        // Start the run loop but return after each source is handled
+        SInt32 result = CFRunLoopRunInMode(kCFRunLoopDefaultMode, 10, YES);
+        
+        // If a source explicitly stopped the run loop, or if there are no sources or timers, go ahead and exit.
+        if ((result == kCFRunLoopRunStopped) || (result == kCFRunLoopRunFinished)) {
+            done = YES;
+            
+            // Check for any other exit conditions here and set the done variable as needed.
+        }
+    }
+    while (!done);
+    
+    // Clean up code here. Be sure to release any allocated autorelease pools.
 }
 
 

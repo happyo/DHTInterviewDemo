@@ -15,6 +15,7 @@
 #import "DHTAnimationViewController.h"
 #import "DHTRuntimeTestViewController.h"
 #import "DHTDataStructuresViewController.h"
+#import "RunLoopContext.h"
 
 @interface AppDelegate ()
 
@@ -58,6 +59,27 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (void)registerSource:(RunLoopContext *)sourceInfo
+{
+//    [soucesToPing addObject:sourceInfo];
+}
+
+- (void)removeSource:(RunLoopContext *)sourceInfo
+{
+//    id objToRemove = nil;
+//    
+//    for (RunLoopContext *context in sourcesToPing) {
+//        if ([context isEqual:sourceInfo]) {
+//            objToRemove = context;
+//            break;
+//        }
+//    }
+//    
+//    if (objToRemove) {
+//        [sourcesToPing removeObject:objToRemove];
+//    }
 }
 
 @end
