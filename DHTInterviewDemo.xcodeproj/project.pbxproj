@@ -26,6 +26,9 @@
 		211C633F225C8F0300704B79 /* DHTRunLoopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 211C633E225C8F0300704B79 /* DHTRunLoopViewController.m */; };
 		211C6342225DD39F00704B79 /* RunLoopSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 211C6341225DD39F00704B79 /* RunLoopSource.m */; };
 		211C6345225DD4F300704B79 /* RunLoopContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 211C6344225DD4F300704B79 /* RunLoopContext.m */; };
+		211C6349225DE8CC00704B79 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 211C6348225DE8CC00704B79 /* Person.m */; };
+		211C634C225DE8D600704B79 /* Account.m in Sources */ = {isa = PBXBuildFile; fileRef = 211C634B225DE8D600704B79 /* Account.m */; };
+		211C634F225DE93200704B79 /* DHTKVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 211C634E225DE93100704B79 /* DHTKVOViewController.m */; };
 		219FC89B1CDC5A88002D547E /* DHTRuntimeTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 219FC89A1CDC5A88002D547E /* DHTRuntimeTestViewController.m */; };
 		21AACE0E1CDF82690040EA5A /* MyClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 21AACE0D1CDF82690040EA5A /* MyClass.m */; };
 		21EA45561C4C96FE00657D81 /* DHTCoreDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21EA45551C4C96FE00657D81 /* DHTCoreDataViewController.m */; };
@@ -94,6 +97,12 @@
 		211C6341225DD39F00704B79 /* RunLoopSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunLoopSource.m; sourceTree = "<group>"; };
 		211C6343225DD4F300704B79 /* RunLoopContext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunLoopContext.h; sourceTree = "<group>"; };
 		211C6344225DD4F300704B79 /* RunLoopContext.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunLoopContext.m; sourceTree = "<group>"; };
+		211C6347225DE8CC00704B79 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		211C6348225DE8CC00704B79 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		211C634A225DE8D600704B79 /* Account.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Account.h; sourceTree = "<group>"; };
+		211C634B225DE8D600704B79 /* Account.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Account.m; sourceTree = "<group>"; };
+		211C634D225DE93100704B79 /* DHTKVOViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DHTKVOViewController.h; sourceTree = "<group>"; };
+		211C634E225DE93100704B79 /* DHTKVOViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DHTKVOViewController.m; sourceTree = "<group>"; };
 		219FC8991CDC5A88002D547E /* DHTRuntimeTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHTRuntimeTestViewController.h; sourceTree = "<group>"; };
 		219FC89A1CDC5A88002D547E /* DHTRuntimeTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHTRuntimeTestViewController.m; sourceTree = "<group>"; };
 		21AACE0C1CDF82690040EA5A /* MyClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyClass.h; sourceTree = "<group>"; };
@@ -164,6 +173,7 @@
 		2113A3B31C4916DD00EA0096 /* DHTInterviewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				211C6346225DE8B000704B79 /* KVO */,
 				211C633C225C8EEB00704B79 /* RunLoop */,
 				211C633B225C8E9D00704B79 /* Concurrent */,
 				211C633A225C8E8300704B79 /* CoreData */,
@@ -296,6 +306,19 @@
 				211C6344225DD4F300704B79 /* RunLoopContext.m */,
 			);
 			path = RunLoop;
+			sourceTree = "<group>";
+		};
+		211C6346225DE8B000704B79 /* KVO */ = {
+			isa = PBXGroup;
+			children = (
+				211C6347225DE8CC00704B79 /* Person.h */,
+				211C6348225DE8CC00704B79 /* Person.m */,
+				211C634A225DE8D600704B79 /* Account.h */,
+				211C634B225DE8D600704B79 /* Account.m */,
+				211C634D225DE93100704B79 /* DHTKVOViewController.h */,
+				211C634E225DE93100704B79 /* DHTKVOViewController.m */,
+			);
+			path = KVO;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -436,6 +459,7 @@
 				21196A501CE2012A00387547 /* DHTDataStructuresViewController.m in Sources */,
 				211C6345225DD4F300704B79 /* RunLoopContext.m in Sources */,
 				2113A3B91C4916DD00EA0096 /* AppDelegate.m in Sources */,
+				211C634C225DE8D600704B79 /* Account.m in Sources */,
 				2113A3E91C4A3F5200EA0096 /* DHTGCDViewController.m in Sources */,
 				211C6342225DD39F00704B79 /* RunLoopSource.m in Sources */,
 				2113A3F71C4D2D7800EA0096 /* Car.m in Sources */,
@@ -443,9 +467,11 @@
 				2113A3B61C4916DD00EA0096 /* main.m in Sources */,
 				211C633F225C8F0300704B79 /* DHTRunLoopViewController.m in Sources */,
 				21EAE9611C4E34B200B55B66 /* DHTGraphicsView.m in Sources */,
+				211C634F225DE93200704B79 /* DHTKVOViewController.m in Sources */,
 				210410291CF2B23A00A6FC06 /* DHTRuntimeMethodHelper.m in Sources */,
 				21EAE95E1C4E348D00B55B66 /* DHTGraphicsViewController.m in Sources */,
 				2113A3F01C4B41A300EA0096 /* DHTAsynchronouslyOperation.m in Sources */,
+				211C6349225DE8CC00704B79 /* Person.m in Sources */,
 				219FC89B1CDC5A88002D547E /* DHTRuntimeTestViewController.m in Sources */,
 				21AACE0E1CDF82690040EA5A /* MyClass.m in Sources */,
 				2113A3F41C4D058900EA0096 /* DHTStorageViewController.m in Sources */,
