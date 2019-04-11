@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "DHTRunLoopViewController.h"
+#import "DHTKVOViewController.h"
 
 @interface DHTVCModel : NSObject
 
@@ -88,7 +89,11 @@
         runLoopModel.name = @"Run Loop";
         runLoopModel.vc = [[DHTRunLoopViewController alloc] init];
         
-        _vcList = @[runLoopModel];
+        DHTVCModel *kvoModel = [[DHTVCModel alloc] init];
+        kvoModel.name = @"KVO";
+        kvoModel.vc = [[DHTKVOViewController alloc] init];
+        
+        _vcList = @[runLoopModel, kvoModel];
     }
     
     return _vcList;

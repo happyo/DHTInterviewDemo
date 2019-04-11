@@ -16,6 +16,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, assign) double interestRate;
 
+@property (nonatomic, assign) int itemChanged;
+
+@property (nonatomic, strong) NSString *balanceDesc;
+
 @end
 
 NS_ASSUME_NONNULL_END
