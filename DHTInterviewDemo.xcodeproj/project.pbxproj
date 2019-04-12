@@ -28,6 +28,10 @@
 		211C6345225DD4F300704B79 /* RunLoopContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 211C6344225DD4F300704B79 /* RunLoopContext.m */; };
 		211C634C225DE8D600704B79 /* Account.m in Sources */ = {isa = PBXBuildFile; fileRef = 211C634B225DE8D600704B79 /* Account.m */; };
 		211C634F225DE93200704B79 /* DHTKVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 211C634E225DE93100704B79 /* DHTKVOViewController.m */; };
+		211C635322603CDC00704B79 /* DHTKVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 211C635222603CDC00704B79 /* DHTKVCViewController.m */; };
+		211C635622603CFF00704B79 /* KVCBankAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 211C635522603CFE00704B79 /* KVCBankAccount.m */; };
+		211C6359226061DC00704B79 /* KVCPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 211C6358226061DC00704B79 /* KVCPerson.m */; };
+		211C635C226061F200704B79 /* KVCTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = 211C635B226061F200704B79 /* KVCTransaction.m */; };
 		219FC89B1CDC5A88002D547E /* DHTRuntimeTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 219FC89A1CDC5A88002D547E /* DHTRuntimeTestViewController.m */; };
 		21AACE0E1CDF82690040EA5A /* MyClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 21AACE0D1CDF82690040EA5A /* MyClass.m */; };
 		21EA45561C4C96FE00657D81 /* DHTCoreDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21EA45551C4C96FE00657D81 /* DHTCoreDataViewController.m */; };
@@ -100,6 +104,14 @@
 		211C634B225DE8D600704B79 /* Account.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Account.m; sourceTree = "<group>"; };
 		211C634D225DE93100704B79 /* DHTKVOViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DHTKVOViewController.h; sourceTree = "<group>"; };
 		211C634E225DE93100704B79 /* DHTKVOViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DHTKVOViewController.m; sourceTree = "<group>"; };
+		211C635122603CDC00704B79 /* DHTKVCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DHTKVCViewController.h; sourceTree = "<group>"; };
+		211C635222603CDC00704B79 /* DHTKVCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DHTKVCViewController.m; sourceTree = "<group>"; };
+		211C635422603CFE00704B79 /* KVCBankAccount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVCBankAccount.h; sourceTree = "<group>"; };
+		211C635522603CFE00704B79 /* KVCBankAccount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVCBankAccount.m; sourceTree = "<group>"; };
+		211C6357226061DC00704B79 /* KVCPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVCPerson.h; sourceTree = "<group>"; };
+		211C6358226061DC00704B79 /* KVCPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVCPerson.m; sourceTree = "<group>"; };
+		211C635A226061F200704B79 /* KVCTransaction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVCTransaction.h; sourceTree = "<group>"; };
+		211C635B226061F200704B79 /* KVCTransaction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVCTransaction.m; sourceTree = "<group>"; };
 		219FC8991CDC5A88002D547E /* DHTRuntimeTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHTRuntimeTestViewController.h; sourceTree = "<group>"; };
 		219FC89A1CDC5A88002D547E /* DHTRuntimeTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHTRuntimeTestViewController.m; sourceTree = "<group>"; };
 		21AACE0C1CDF82690040EA5A /* MyClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyClass.h; sourceTree = "<group>"; };
@@ -170,6 +182,7 @@
 		2113A3B31C4916DD00EA0096 /* DHTInterviewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				211C635022603CC500704B79 /* KVC */,
 				211C6346225DE8B000704B79 /* KVO */,
 				211C633C225C8EEB00704B79 /* RunLoop */,
 				211C633B225C8E9D00704B79 /* Concurrent */,
@@ -316,6 +329,21 @@
 			path = KVO;
 			sourceTree = "<group>";
 		};
+		211C635022603CC500704B79 /* KVC */ = {
+			isa = PBXGroup;
+			children = (
+				211C635122603CDC00704B79 /* DHTKVCViewController.h */,
+				211C635222603CDC00704B79 /* DHTKVCViewController.m */,
+				211C635422603CFE00704B79 /* KVCBankAccount.h */,
+				211C635522603CFE00704B79 /* KVCBankAccount.m */,
+				211C6357226061DC00704B79 /* KVCPerson.h */,
+				211C6358226061DC00704B79 /* KVCPerson.m */,
+				211C635A226061F200704B79 /* KVCTransaction.h */,
+				211C635B226061F200704B79 /* KVCTransaction.m */,
+			);
+			path = KVC;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -452,16 +480,19 @@
 				21EAE9641C50885300B55B66 /* DHTAnimationViewController.m in Sources */,
 				21EA45561C4C96FE00657D81 /* DHTCoreDataViewController.m in Sources */,
 				21196A501CE2012A00387547 /* DHTDataStructuresViewController.m in Sources */,
+				211C635C226061F200704B79 /* KVCTransaction.m in Sources */,
 				211C6345225DD4F300704B79 /* RunLoopContext.m in Sources */,
 				2113A3B91C4916DD00EA0096 /* AppDelegate.m in Sources */,
 				211C634C225DE8D600704B79 /* Account.m in Sources */,
 				2113A3E91C4A3F5200EA0096 /* DHTGCDViewController.m in Sources */,
 				211C6342225DD39F00704B79 /* RunLoopSource.m in Sources */,
 				2113A3F71C4D2D7800EA0096 /* Car.m in Sources */,
+				211C635322603CDC00704B79 /* DHTKVCViewController.m in Sources */,
 				2104102C1CF2E3A100A6FC06 /* UIViewController+tracking.m in Sources */,
 				2113A3B61C4916DD00EA0096 /* main.m in Sources */,
 				211C633F225C8F0300704B79 /* DHTRunLoopViewController.m in Sources */,
 				21EAE9611C4E34B200B55B66 /* DHTGraphicsView.m in Sources */,
+				211C6359226061DC00704B79 /* KVCPerson.m in Sources */,
 				211C634F225DE93200704B79 /* DHTKVOViewController.m in Sources */,
 				210410291CF2B23A00A6FC06 /* DHTRuntimeMethodHelper.m in Sources */,
 				21EAE95E1C4E348D00B55B66 /* DHTGraphicsViewController.m in Sources */,
@@ -471,6 +502,7 @@
 				2113A3F41C4D058900EA0096 /* DHTStorageViewController.m in Sources */,
 				21EA455E1C4C9DC800657D81 /* Person+CoreDataProperties.m in Sources */,
 				21EA45591C4C974000657D81 /* DHTInterviewDemo.xcdatamodeld in Sources */,
+				211C635622603CFF00704B79 /* KVCBankAccount.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
